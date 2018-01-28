@@ -1,0 +1,342 @@
+[ 2018-01-27T22:02:19+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000652s ]
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\Software\wamp64\www\demo\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') C:\Software\wamp64\www\demo\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: p C:\Software\wamp64\www\demo\Application\Admin\Controller\MenuController.class.php 第 51 行.
+NOTIC: [8] Undefined index: pageSize C:\Software\wamp64\www\demo\Application\Admin\Controller\MenuController.class.php 第 52 行.
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) C:\Software\wamp64\www\demo\Application\Common\Model\MenuModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `tt_menu` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `tt_menu` WHERE `status` <> -1 ORDER BY listorder desc,menu_id desc LIMIT 0,3   [ RunTime:0.0032s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tt_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0034s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+SQL: SELECT * FROM `tt_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined variable: nav C:\Software\wamp64\www\demo\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 101 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024486s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000777s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000784s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000890s ]
+
+[ 2018-01-27T22:02:23+08:00 ] 127.0.0.1 /admin.php?c=content
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001023s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\Software\wamp64\www\demo\Application\Admin\Controller\ContentController.class.php 第 12 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') C:\Software\wamp64\www\demo\Application\Admin\Controller\ContentController.class.php 第 12 行.
+NOTIC: [8] Undefined index: title C:\Software\wamp64\www\demo\Application\Admin\Controller\ContentController.class.php 第 16 行.
+NOTIC: [8] Undefined index: catid C:\Software\wamp64\www\demo\Application\Admin\Controller\ContentController.class.php 第 20 行.
+NOTIC: [8] Undefined index: p C:\Software\wamp64\www\demo\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\Software\wamp64\www\demo\Application\Common\Model\NewsModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `tt_news` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `tt_news` WHERE `status` <> -1 ORDER BY listorder desc ,news_id desc LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tt_news` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\PositionModel::find() should be compatible with Think\Model::find($options = Array) C:\Software\wamp64\www\demo\Application\Common\Model\PositionModel.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `tt_position` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `tt_position` WHERE `status` = 1 ORDER BY id  [ RunTime:0.0008s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) C:\Software\wamp64\www\demo\Application\Common\Model\MenuModel.class.php 第 92 行.
+SQL: SHOW COLUMNS FROM `tt_menu` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `tt_menu` WHERE `status` = 1 AND `type` = 0 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+SQL: SELECT * FROM `tt_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022158s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000832s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000955s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000913s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001027s ]
+
+[ 2018-01-27T22:02:25+08:00 ] 127.0.0.1 /admin.php?c=position
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000669s ]
+NOTIC: [2048] Declaration of Admin\Controller\PositionController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\Software\wamp64\www\demo\Application\Admin\Controller\PositionController.class.php 第 7 行.
+NOTIC: [2048] Declaration of Common\Model\PositionModel::find() should be compatible with Think\Model::find($options = Array) C:\Software\wamp64\www\demo\Application\Common\Model\PositionModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `tt_position` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `tt_position` WHERE `status` <> -1 ORDER BY id  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000276s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) C:\Software\wamp64\www\demo\Application\Common\Model\MenuModel.class.php 第 92 行.
+SQL: SHOW COLUMNS FROM `tt_menu` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `tt_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023764s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023925s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000711s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000768s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000906s ]
+
+[ 2018-01-27T22:02:33+08:00 ] 127.0.0.1 /admin.php?c=content
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\Software\wamp64\www\demo\Application\Admin\Controller\ContentController.class.php 第 12 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') C:\Software\wamp64\www\demo\Application\Admin\Controller\ContentController.class.php 第 12 行.
+NOTIC: [8] Undefined index: title C:\Software\wamp64\www\demo\Application\Admin\Controller\ContentController.class.php 第 16 行.
+NOTIC: [8] Undefined index: catid C:\Software\wamp64\www\demo\Application\Admin\Controller\ContentController.class.php 第 20 行.
+NOTIC: [8] Undefined index: p C:\Software\wamp64\www\demo\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\Software\wamp64\www\demo\Application\Common\Model\NewsModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `tt_news` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `tt_news` WHERE `status` <> -1 ORDER BY listorder desc ,news_id desc LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tt_news` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\PositionModel::find() should be compatible with Think\Model::find($options = Array) C:\Software\wamp64\www\demo\Application\Common\Model\PositionModel.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `tt_position` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tt_position` WHERE `status` = 1 ORDER BY id  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) C:\Software\wamp64\www\demo\Application\Common\Model\MenuModel.class.php 第 92 行.
+SQL: SHOW COLUMNS FROM `tt_menu` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tt_menu` WHERE `status` = 1 AND `type` = 0 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+SQL: SELECT * FROM `tt_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018700s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018811s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000780s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000807s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000916s ]
+
+[ 2018-01-27T22:02:34+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000773s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001249s ]
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\Software\wamp64\www\demo\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') C:\Software\wamp64\www\demo\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: p C:\Software\wamp64\www\demo\Application\Admin\Controller\MenuController.class.php 第 51 行.
+NOTIC: [8] Undefined index: pageSize C:\Software\wamp64\www\demo\Application\Admin\Controller\MenuController.class.php 第 52 行.
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) C:\Software\wamp64\www\demo\Application\Common\Model\MenuModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `tt_menu` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `tt_menu` WHERE `status` <> -1 ORDER BY listorder desc,menu_id desc LIMIT 0,3   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tt_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000341s ]
+SQL: SELECT * FROM `tt_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined variable: nav C:\Software\wamp64\www\demo\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 101 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021372s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021515s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001224s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001380s ]
+
+[ 2018-01-27T22:02:35+08:00 ] 127.0.0.1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001052s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\Software\wamp64\www\demo\Application\Common\Model\NewsModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `tt_news` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tt_news` WHERE `status` = 1 ORDER BY count desc LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tt_news` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Common\Model\PositionModel::find() should be compatible with Think\Model::find($options = Array) C:\Software\wamp64\www\demo\Application\Common\Model\PositionModel.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `tt_position` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tt_position` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tt_admin` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tt_admin` WHERE `status` = 1 AND `lastlogintime` > 1516982400 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2] Illegal string offset 'tp_count' C:\Software\wamp64\www\demo\Application\Common\Model\AdminModel.class.php 第 75 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000275s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) C:\Software\wamp64\www\demo\Application\Common\Model\MenuModel.class.php 第 92 行.
+SQL: SHOW COLUMNS FROM `tt_menu` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `tt_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026494s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026658s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001012s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001672s ]
+
+[ 2018-01-27T22:02:37+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001216s ]
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\Software\wamp64\www\demo\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') C:\Software\wamp64\www\demo\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: p C:\Software\wamp64\www\demo\Application\Admin\Controller\MenuController.class.php 第 51 行.
+NOTIC: [8] Undefined index: pageSize C:\Software\wamp64\www\demo\Application\Admin\Controller\MenuController.class.php 第 52 行.
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) C:\Software\wamp64\www\demo\Application\Common\Model\MenuModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `tt_menu` [ RunTime:0.0396s ]
+SQL: SELECT * FROM `tt_menu` WHERE `status` <> -1 ORDER BY listorder desc,menu_id desc LIMIT 0,3   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tt_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0098s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000391s ]
+SQL: SELECT * FROM `tt_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined variable: nav C:\Software\wamp64\www\demo\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 101 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080415s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080603s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001287s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001195s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001376s ]
+
+[ 2018-01-27T22:02:39+08:00 ] 127.0.0.1 /admin.php?c=content
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\Software\wamp64\www\demo\Application\Admin\Controller\ContentController.class.php 第 12 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') C:\Software\wamp64\www\demo\Application\Admin\Controller\ContentController.class.php 第 12 行.
+NOTIC: [8] Undefined index: title C:\Software\wamp64\www\demo\Application\Admin\Controller\ContentController.class.php 第 16 行.
+NOTIC: [8] Undefined index: catid C:\Software\wamp64\www\demo\Application\Admin\Controller\ContentController.class.php 第 20 行.
+NOTIC: [8] Undefined index: p C:\Software\wamp64\www\demo\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) C:\Software\wamp64\www\demo\Application\Common\Model\NewsModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `tt_news` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `tt_news` WHERE `status` <> -1 ORDER BY listorder desc ,news_id desc LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tt_news` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\PositionModel::find() should be compatible with Think\Model::find($options = Array) C:\Software\wamp64\www\demo\Application\Common\Model\PositionModel.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `tt_position` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tt_position` WHERE `status` = 1 ORDER BY id  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) C:\Software\wamp64\www\demo\Application\Common\Model\MenuModel.class.php 第 92 行.
+SQL: SHOW COLUMNS FROM `tt_menu` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `tt_menu` WHERE `status` = 1 AND `type` = 0 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000325s ]
+SQL: SELECT * FROM `tt_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018643s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018752s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000788s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000787s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000896s ]
+
+[ 2018-01-27T22:02:41+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) C:\Software\wamp64\www\demo\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') C:\Software\wamp64\www\demo\Application\Admin\Controller\MenuController.class.php 第 9 行.
+NOTIC: [8] Undefined index: p C:\Software\wamp64\www\demo\Application\Admin\Controller\MenuController.class.php 第 51 行.
+NOTIC: [8] Undefined index: pageSize C:\Software\wamp64\www\demo\Application\Admin\Controller\MenuController.class.php 第 52 行.
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) C:\Software\wamp64\www\demo\Application\Common\Model\MenuModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `tt_menu` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `tt_menu` WHERE `status` <> -1 ORDER BY listorder desc,menu_id desc LIMIT 0,3   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tt_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000249s ]
+SQL: SELECT * FROM `tt_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined index: a C:\Software\wamp64\www\demo\Application\Common\Common\function.php 第 33 行.
+NOTIC: [8] Undefined variable: nav C:\Software\wamp64\www\demo\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 101 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015188s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015290s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000765s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000777s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000885s ]
+
